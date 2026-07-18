@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Gallery</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header>
+        <div class="theme-toggle">
+    <button id="theme-btn">🌙</button>
+        </div>
+        <h1>Image Gallery</h1>
+        <p>Explore Beautiful Images</p>
+    </header>
+
+    <!-- Filter Buttons -->
+    <section class="filter-buttons">
+
+        <button class="active" data-filter="all">All</button>
+        <button data-filter="nature">Nature</button>
+        <button data-filter="cars">Cars</button>
+        <button data-filter="animals">Animals</button>
+
+    </section>
+
+    <!-- Search Box -->
+    <section class="search-box">
+
+        <input
+            type="text"
+            id="search"
+            placeholder="Search Images...">
+
+    </section>
+
+    <!-- Gallery -->
+    <section class="gallery">
+
+        <!-- Nature -->
+        <div class="image nature">
+            <span class="favorite">&#9825;</span>
+            <a href="images/image2.jpg" class="download" download>⬇</a>
+            <img src="images/image1.jpg" alt="Nature">
+        </div>
+
+        <div class="image nature">
+            <span class="favorite">&#9825;</span>
+            <a href="images/image2.jpg" class="download" download>⬇</a>
+            <img src="images/images2.jpg" alt="Nature">
+        </div>
+
+        <!-- Cars -->
+        <div class="image cars">
+            <span class="favorite">&#9825;</span>
+            <a href="images/image2.jpg" class="download" download>⬇</a>
+            <img src="images/images3.jpg" alt="Car">
+        </div>
+
+        <div class="image cars">
+            <span class="favorite">&#9825;</span>
+            <a href="images/image2.jpg" class="download" download>⬇</a>
+            <img src="images/images4.jpg" alt="Car">
+        </div>
+
+        <!-- Animals -->
+        <div class="image animals">
+            <span class="favorite">&#9825;</span>
+            <a href="images/image2.jpg" class="download" download>⬇</a>
+            <img src="images/images5.jpg" alt="Animal">
+        </div>
+
+        <div class="image animals">
+            <span class="favorite">&#9825;</span>
+            <a href="images/image2.jpg" class="download" download>⬇</a>
+            <img src="images/images6.jpg" alt="Animal">
+        </div>
+
+    </section>
+
+    <!-- Lightbox -->
+    <div class="lightbox">
+
+        <span class="close">&times;</span>
+
+        <img id="lightbox-img" src="" alt="Preview">
+
+        <button id="prev">&#10094;</button>
+
+        <button id="next">&#10095;</button>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
